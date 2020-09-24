@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset= "UTF-8">
+    <meta charset="UTF-8">
 
     <meta name="author" content="David Nevarez">
     <meta name="Description" content="Easy form for you to order pizza and a drink.">
 
-    <meta property = "og.image" content="MyCustomFavicon.png">
-    <meta property = "og.title" content="O mighty T">
-    <meta property = "og.description" content="Just a mighty T">
+    <meta property="og.image" content="MyCustomFavicon.png">
+    <meta property="og.title" content="O mighty T">
+    <meta property="og.description" content="Just a mighty T">
 
     <title>Pizza Form</title>
 
@@ -16,25 +17,29 @@
 </head>
 
 <body style="background-color: #00B2CA;">
+
     <form action="data.json" method="POST">
-        <fieldset style="border: 7px solid #F37622; width: 790px">
+
+        <fieldset style="border: 7px solid #F37622; width: 1290">
             <legend style="font-size:x-large; color: #153243">User Information</legend>
+
             <ul>
                 <li>
                     <label for="name:">User Name:</label>
-                    <input type="text" id="name" name = "user.name">
+                    <input type="text" id="name" name="user.name">
                 </li>
-                
+
                 <li>
                     <label for="PW">Password:</label>
-                    <input type="password" id="PW" name = "user.password">
+                    <input type="password" id="PW" name="user.password">
                 </li>
-                
             </ul>
+
         </fieldset>
 
-        <fieldset style="border: 7px solid #F37622; width: 790px">
+        <fieldset style="border: 7px solid #F37622; width: 1290">
             <legend style="font-size:x-large; color: #153243">What drink do you want?</legend>
+
             <ul>
                 <li>
                     <input type="radio" id="drinkType" name="user.drinkType">
@@ -55,47 +60,48 @@
             </ul>
         </fieldset>
 
-        <fieldset style="border: 7px solid #F37622; width: 790px">
+        <fieldset style="border: 7px solid #F37622; width: 1290">
             <legend style="font-size:x-large; color: #153243">Pizza Perference:</legend>
             <ul>
                 <li>
                     <input type="checkbox" id="PizzaType" name="user.PizzaType">
                     <label for="PizzaType">Plain</label>
                 </li>
-                
+
                 <li>
                     <input type="checkbox" id="PizzaType" name="user.PizzaType">
                     <label for="PizzaType">Pepperone</label>
                 </li>
-                
+
                 <li>
                     <input type="checkbox" id="PizzaType" name="user.PizzaType">
                     <label for="PizzaType">Chicken</label>
                 </li>
-                
+
                 <li>
                     <input type="checkbox" id="PizzaType" name="user.PizzaType">
                     <label for="PizzaType">Chicken</label>
                 </li>
-                
+
                 <li>
                     <input type="checkbox" id="PizzaType" name="user.PizzaType">
-                <label for="PizzaType">Sausage</label>
+                    <label for="PizzaType">Sausage</label>
                 </li>
             </ul>
         </fieldset>
 
-        <fieldset style="border: 7px solid #F37622; width: 790px">
+        <fieldset style="border: 7px solid #F37622; width: 1290">
             <legend style="font-size:x-large; color: #153243">Special Instructions:</legend>
             <ul>
                 <li>
                     <label for="SpecialInstructions">Please fill in any special request you have</label>
                     <br>
-                    <textarea name="user.SpecialInstructions" id="SpecialInstructions" cols="30" rows="10" style="background-color: #00a9c0;"></textarea>
+                    <textarea name="user.SpecialInstructions" id="SpecialInstructions" cols="30" rows="10"
+                        style="background-color: #00a9c0;"></textarea>
                 </li>
-                
+
                 <button type="submit">Submit</button>
-                
+
             </ul>
         </fieldset>
     </form>
